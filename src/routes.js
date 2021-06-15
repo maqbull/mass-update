@@ -39,13 +39,15 @@ const User = React.lazy(() => import('./views/users/User'));
 
 // Add Custom route
 const Simpleupdate = React.lazy(() => import('./views/custom/simpleupdate/Simpleupdate'));
+const Updated = React.lazy(() => import('./views/custom/updated/Updated'));
 
 
 const routes = [
   
   { path: '/', exact: true, name: 'Dashboard' },
   //Add custom routes
-  { path: '/custom', name: 'Simpleupdate', component: Simpleupdate ,cardid :2  },
+  { path: '/custom/simpleupdate', name: 'Simpleupdate', component: Simpleupdate ,cardid :2  },
+  { path: '/custom/updated', name: 'Updated', component: Updated ,cardid :3  },
    //end custom routes
   { path: '/dashboard', name: 'Dashboard', component: Dashboard },
   

@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+
 import { makeStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
 import List from '@material-ui/core/List';
@@ -65,7 +66,7 @@ const useStyles = makeStyles((theme) => ({
     const handleToggle = (value) => () => {
       const currentIndex = checked.indexOf(value);
       const newChecked = [...checked];
-  
+    
       if (currentIndex === -1) {
         newChecked.push(value);
       } else {
@@ -190,6 +191,7 @@ const useStyles = makeStyles((theme) => ({
           </Grid>
         </Grid>
         <Grid item>{customList('Chosen', right)}</Grid>
+      
       </Grid> 
       </>
     );

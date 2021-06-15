@@ -88,6 +88,11 @@ const _nav =  [
         _tag: 'CSidebarNavItem',
         name: 'Update Projects',
         to: '/custom/simpleupdate',
+      },
+      {
+        _tag: 'CSidebarNavItem',
+        name: 'Updated',
+        to: '/custom/updated',
       }
     ],
   },
