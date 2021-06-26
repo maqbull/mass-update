@@ -10,6 +10,7 @@ import {
 import CIcon from '@coreui/icons-react'
 
 const TheHeaderDropdown = () => {
+  
   return (
     <CDropdown
       inNav
@@ -40,7 +41,8 @@ const TheHeaderDropdown = () => {
         <CDropdownItem divider />
         <CDropdownItem>
           <CIcon name="cil-lock-locked" className="mfe-2" />
-          Logout
+          <button 
+          type="button" className="btn">Logout</button>
         </CDropdownItem>
       </CDropdownMenu>
     </CDropdown>

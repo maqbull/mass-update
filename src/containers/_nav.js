@@ -89,11 +89,6 @@ const _nav =  [
         name: 'Update Projects',
         to: '/custom/simpleupdate',
       },
-      {
-        _tag: 'CSidebarNavItem',
-        name: 'Updated',
-        to: '/custom/updated',
-      }
     ],
   },
    // COMPONENT Order Management 

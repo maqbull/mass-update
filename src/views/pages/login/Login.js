@@ -22,6 +22,7 @@ import CIcon from '@coreui/icons-react'
 
 const Login = () => {
   let history = useHistory();
+  
   const [username, SetName] = useState("");
   const [password, SetPassword] = useState("");
   const [alert, SetAlert] = useState(false);
@@ -65,7 +66,8 @@ const handleClick = () => {
         .then((result) => {
                   if (result.status===200) 
                   {
-                   // console.log('stataus' + result.data.access)
+                  sessionStorage.setItem('token',result.data.access)
+                   console.log('stataus' + result.data.access)
                     document.cookie = 'access' + "=" + result.data.access + ";" + ";path=/";
                     history.push("/dashboard");
                   }

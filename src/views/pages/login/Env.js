@@ -1,3 +1,3 @@
-const base_url = 'http://192.168.1.9/'
+const base_url = 'https://mass-upload-server.herokuapp.com/'
 
 export default base_url
