@@ -11,6 +11,7 @@ import { icons } from './assets/icons'
 
 import { Provider } from 'react-redux'
 import store from './store'
+import './index.css'
 
 React.icons = icons
 

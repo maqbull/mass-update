@@ -17,6 +17,7 @@ import CssBaseline from '@material-ui/core/CssBaseline';
 import Typography from '@material-ui/core/Typography';
 import Container from '@material-ui/core/Container';
 import SaveIcon from '@material-ui/icons/Save';
+import ViewListIcon from '@material-ui/icons/ViewList';
 import axios from 'axios';
 
 import base_url from '../../pages/login/Env'
@@ -26,6 +27,7 @@ import base_url from '../../pages/login/Env'
 const useStyles = makeStyles((theme) => ({
   root: {
     margin: 'auto',
+    justifyContent: 'center',
   },
   cardHeader: {
     padding: theme.spacing(1, 2),
@@ -175,6 +177,11 @@ export default function TransferList() {
 
   return (
     <>
+   
+    <div  className="cardname" >
+    <p className="icon"> <ViewListIcon/> </p>
+     <p className="name"> { cardName} </p>
+        </div>
       <TextField
         placeholder="Enter Template Name"
         fullWidth
@@ -184,19 +191,29 @@ export default function TransferList() {
         }}
       />
      
+      <Grid item xs={12} sm={12} md={4} lg={4}
+      style={{
+        textAlign:'center' // this does the magic
+    }}
+      >
       <Button
         variant="contained"
         color="primary"
         size="small"
-        className={classes.button}
-        style={{ marginLeft: 900, marginTop: 0, marginBottom: 10, marginRight: 0 }}
+        // className={classes.button}
+      //   style={{
+      //     display: "flex",
+      //     flexDirection: "row",
+      //     justifyContent:"center",
+      //     textAlign:'center'
+      // }}
+        // style={{ marginLeft: 900, marginTop: 0, marginBottom: 10, marginRight: 0 }}
         startIcon={<SaveIcon />}
       >
         Save
       </Button>
-      <div  className="card text-center">
-      <h4 className="card-body"> {cardName}</h4> 
-        </div>
+      </Grid>
+      
       <Grid container spacing={2} justify="center" alignItems="center" className={classes.root}
         style={{ margin: 5 }}>
         <Grid item>{customList('Choices for update', left)}</Grid>
