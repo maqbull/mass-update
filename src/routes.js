@@ -39,6 +39,7 @@ const User = React.lazy(() => import('./views/users/User'));
 
 // Add Custom route
 const Simpleupdate = React.lazy(() => import('./views/custom/simpleupdate/Simpleupdate'));
+const UserGrant = React.lazy(() => import('./views/custom/UserGrant/Modal'));
 
 
 const routes = [
@@ -46,6 +47,7 @@ const routes = [
   { path: '/', exact: true, name: 'Dashboard' },
   //Add custom routes
   { path: '/custom/simpleupdate', name: 'Simpleupdate', component: Simpleupdate ,cardid :3  },
+  { path: '/setup/usergrant', name: 'UserGrant', component: UserGrant  },
    //end custom routes
   { path: '/dashboard', name: 'Dashboard', component: Dashboard },
   

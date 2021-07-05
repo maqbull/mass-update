@@ -15,7 +15,7 @@ import {
 import { DocsLink } from 'src/reusable'
 
 const Modals = () => {
-
+   
   const [modal, setModal] = useState(true)
   const [large, setLarge] = useState(false)
   const [small, setSmall] = useState(false)

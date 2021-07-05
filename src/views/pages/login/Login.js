@@ -1,5 +1,5 @@
 import React ,{ useState } from 'react'
-import axios from 'axios';
+import axios from 'axios'
 import base_url from './Env'
 import { Link , useHistory } from 'react-router-dom';
 import {
@@ -20,8 +20,11 @@ import {
 import CIcon from '@coreui/icons-react'
 
 
+
+
 const Login = () => {
-  let history = useHistory();
+
+  let history = useHistory()
   
   const [username, SetName] = useState("");
   const [password, SetPassword] = useState("");
@@ -67,7 +70,7 @@ const handleClick = () => {
                   if (result.status===200) 
                   {
                   sessionStorage.setItem('token',result.data.access)
-                   console.log('stataus' + result.data.access)
+                  //  console.log('stataus' + result.data.access)
                     document.cookie = 'access' + "=" + result.data.access + ";" + ";path=/";
                     history.push("/dashboard");
                   }

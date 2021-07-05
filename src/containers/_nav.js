@@ -14,7 +14,7 @@ const _nav =  [
   {
     _tag: 'CSidebarNavDropdown',
     name: 'Setup',
-    route: '/base',
+    route: '/setup',
     icon: "cilSettings",
     _children: [
       {
@@ -31,7 +31,7 @@ const _nav =  [
       {
         _tag: 'CSidebarNavItem',
         name: 'Users Grant',
-        to: '/base/breadcrumbs',
+        to: '/setup/usergrant',
       }      
     ]},
   ,
